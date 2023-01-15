@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="Index/icon.png">
+    <title>Emilien Marotta</title>
+</head>
+<body onload="updateYearCC()">
+    <header>
+        <img src="Index/logo.png" alt="Logo" class="logo">
+        <nav class="menu">
+            <a class="menu__element" href="#">Home</a>
+            <a class="menu__element" href="#about">About</a>
+            <a class="menu__element" href="#">Portfolio</a>
+            <a class="menu__element" href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="introduction">
+        <div class="introduction-box introduction__me-box">
+            <div class="introduction__me-box__name">EMILIEN MAROTTA<span>.</span></div>
+            <form>
+                <button class="button introduction__me-box__button introduction__me-box__contact-button" formaction="mailto:emilien.marotta@gmail.com">Contact Me</button>
+                <button class="button introduction__me-box__button introduction__me-box__cv-button">CV</button>
+            </form>
+        </div>
+        <div class="introduction-box introduction__status-box">
+            <div class="introduction__status-box__status part-name">Status</div>
+            <div class="introduction__status-box__title sub-part-name">Mathematics & Computer Science Student at IDMC - Nancy</div>
+            <div class="introduction__status-box__description">I study mathematics and computer science in order to work in cybersecurity.</div>
+        </div>
+    </div>
+    <div id="about" class="about">
+        <div class="about__box">
+            <div class="about__box__about part-name">About</div>
+            <div class="about__box__title sub-part-name">Intended studies</div>
+            <div class="about__box__intended-route">
+                <div class="about__box__intended-route__element about__box__intended-route__miashs">
+                    <img onclick="change_content(0)" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px">
+                    <span></span>
+                    <img src="Index/miashs.png" alt="MIASHS">
+                    <div class="about__box__intended-route__element__text">MIASHS degree <br>(Bac to Bac+3)</div>
+                </div>
+                <div class="about__box__intended-route__next">
+                    <img src="Index/right-arrow.png" alt="Then">
+                </div>
+                <div class="about__box__intended-route__element about__box__intended-route__miage">
+                    <img onclick="change_content(1)" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px">
+                    <span></span>
+                    <img src="Index/miage.png" alt="MIAGE">
+                    <div class="about__box__intended-route__element__text">MIAGE master's degree <br>(Bac+3 to Bac+5)</div>
+                </div>
+                <div class="about__box__intended-route__next">
+                    <img src="Index/right-arrow.png" alt="Then">
+                </div>
+                <div class="about__box__intended-route__element about__box__intended-route__mines">
+                    <img onclick="change_content(2)" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px">
+                    <span></span>
+                    <img src="Index/mines.png" alt="Cybersecurity">
+                    <div class="about__box__intended-route__element__text">Specialised master's degree in Cybersecurity <br>(Bac+5 to Bac+6)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div class="contact__box">
+            <div class="contact__box__contact part-name">Contact</div>
+            <div class="contact__box__title sub-part-name">Ways to contact me</div>
+            <form class="contact__box__ways-to-contact" target="_blank">
+                <button class="button contact__box__ways-to-contact__element contact__box__ways-to-contact__email" formaction="mailto:emilien.marotta@gmail.com">
+                    <img src="Index/email.png" alt="">
+                    <span class="contact__box__ways-to-contact__element__text">emilien.marotta@gmail.com</span>
+                </button>
+                <div class="social-networks">
+                    <button class="button contact__box__ways-to-contact__element contact__box__ways-to-contact__instagram" formaction="https://www.instagram.com/emilienmrtt/">
+                        <img src="Index/instagram.png" alt="">
+                        <span class="contact__box__ways-to-contact__element__text">@emilienmrtt</span>
+                    </button>
+                    <button class="button contact__box__ways-to-contact__element contact__box__ways-to-contact__twitter" formaction="https://twitter.com/emilien_mrtt">
+                        <img src="Index/twitter.png" alt="">
+                        <span class="contact__box__ways-to-contact__element__text">@emilienmrtt</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="high-footer">
+            <div class="high-footer__element high-footer__studies">
+                <div class="high-footer__element__title">Studies</div>
+                <div class="high-footer__element__elements">
+                    <div class="high-footer__element__elements__miashs"><a href="https://idmc.univ-lorraine.fr/parcours-miashs/">MIASHS</a></div>
+                    <div class="high-footer__element__elements__miage"><a href="https://idmc.univ-lorraine.fr/idmc-parcours-miage/">MIAGE</a></div>
+                    <div class="high-footer__element__elements__cybersecurity"><a href="https://mines-nancy.univ-lorraine.fr/formation/mastere-specialise-cybersecurite-attaque-defense-des-systemes-informatiques/">Cybersecurity</a></div>
+                </div>
+            </div>
+            <div class="high-footer__element high-footer__social">
+                <div class="high-footer__element__title">Social</div>
+                <div class="high-footer__element__elements">
+                    <div class="high-footer__element__elements__instagram"><a href="https://www.instagram.com/emilienmrtt/">Instagram</a></div>
+                    <div class="high-footer__element__elements__twitter"><a href="https://twitter.com/emilien_mrtt">Twitter</a></div>
+                </div>
+            </div>
+            <div class="high-footer__element high-footer__projects">
+                <div class="high-footer__element__title">Projects</div>
+                <div class="high-footer__element__elements">
+                    <div class="high-footer__element__elements__portfolio"><a href="#">Portfolio</a></div>
+                    <div class="high-footer__element__elements__github"><a href="https://github.com/emilienmarotta">GitHub</a></div>
+                </div>
+            </div>
+            <div class="high-footer__element high-footer__cv">
+                <div class="high-footer__element__title">CV</div>
+                <div class="high-footer__element__elements">
+                    <div class="high-footer__element__elements__download"><a href="#">Download</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="low-footer__line"></div>
+        <div class="low-footer">
+            <div class="low-footer__cc"><a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></div>
+            <div class="low-footer__year"></div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</html>
