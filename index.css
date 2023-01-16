@@ -71,7 +71,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: absolute;
     background-color: #2e2e34d3;
     z-index: 5;
     backdrop-filter: blur(1.5px);
