@@ -350,6 +350,10 @@ header{
     margin-top: 20px;
 }
 
+.contact__box__ways-to-contact__element:hover .contact__box__ways-to-contact__element__text{
+    color: #6495ed;
+}
+
 .social-networks{
     display: flex;
     justify-content: center;
@@ -440,6 +444,20 @@ footer{
     color: #6495ed;
 }
 
+.return-top{
+    position: fixed;
+    bottom: 15px;   
+    right: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+.return-top:hover{
+    transition: 0.2s ease-in-out;
+    transform: translateY(-10%);
+}
 
 @media (max-width: 1175px){
     .about__box__intended-route{
@@ -578,3 +596,4 @@ footer{
         margin-right: 10vw;
     }
 }
+
