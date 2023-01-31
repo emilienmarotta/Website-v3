@@ -33,14 +33,29 @@
 }
 
 @keyframes translation{
-    0%{
+    from{
         left: -20%;
     }
     
-    100%{
+    to{
         left: 100%;
     }
 }
+
+@keyframes shake-up{
+    10%{
+        transform: rotate(-30deg);
+    }
+
+    50%{
+        transform: rotate(20deg);
+    }
+
+    80%{
+        transform: rotate(-10deg);
+    }
+}
+
 
 html{
     scroll-behavior: smooth;
