@@ -32,6 +32,16 @@
     }
 }
 
+@keyframes translation{
+    0%{
+        left: -20%;
+    }
+    
+    100%{
+        left: 100%;
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -114,6 +124,23 @@ header{
 
 .menu__element:hover{
     color: #6495ed;
+}
+
+
+.animated-bar{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 2px;
+}
+
+.animated-bar div{
+    width: 20%;
+    height: 2px;
+    background: linear-gradient(to right, #2e2e34, #6495ed);
+    z-index: 20;
+    position: relative;
+    display: none;
 }
 
 
@@ -346,6 +373,7 @@ header{
     text-align: center;
     font-size: 1.3rem;
     font-weight: 1.3rem;
+    padding: 10px;
 }
 
 .portfolio__empty{
@@ -513,10 +541,17 @@ footer{
 
 @media (max-width: 1175px){
     .about__box__intended-route{
-        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 990px){
+    .about__box__intended-route{
         flex-direction: column;
     }
 
+    
     .about__box__intended-route__next{
         transform: rotate(90deg);
     }
