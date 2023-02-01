@@ -49,7 +49,7 @@ function return_top_animation() {
     if(window.innerWidth > 990) {
         let duration = 1200;
         let animated_bar = document.getElementsByClassName("animated-bar__content")[0];
-        animated_bar.style = `display:block;animation: translation ${duration}ms ease-out;`;
+        animated_bar.style = `display:block;animation: translation ${duration}ms ease-out; transition: ${duration}ms;`;
         setTimeout(() => {
             animated_bar.style = "display:none";
         }, duration);

@@ -265,7 +265,7 @@ header{
 
 .about__box{
     width: 100%;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
@@ -362,57 +362,18 @@ header{
     padding: 5px;
 }
 
-
-.portfolio{
-    width: 100%;
-    height: auto;    
-    background-color: #2e2e34;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 50px;
-    min-width: 340px;
-}
-
-.portfolio__box{
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 80px;
+.blog{
+    height: 200px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.portfolio__box__title{
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 1.3rem;
-    padding: 10px;
+.blog__empty{
+    margin-top: 50px;
 }
-
-.portfolio__empty{
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.check-my-github{
-    text-align: center;
-    padding: 10px;
-}
-
-.portfolio__github{
-    margin: auto;
-}
-
-.github-img{
-    margin: 20px auto 0 auto;
-}
-
-.github-img:hover{
-    cursor: pointer;
-}
-
 
 .contact{
     width: 100%;
@@ -421,7 +382,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     min-width: 340px;
 }
 
