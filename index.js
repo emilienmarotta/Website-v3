@@ -45,18 +45,6 @@ function updateYearCC() {
 }
 
 
-function return_top_animation() {
-    if(window.innerWidth > 990) {
-        let duration = 1200;
-        let animated_bar = document.getElementsByClassName("animated-bar__content")[0];
-        animated_bar.style = `display:block;animation: translation ${duration}ms ease-out; transition: ${duration}ms;`;
-        setTimeout(() => {
-            animated_bar.style = "display:none";
-        }, duration);
-    }
-}
-
-
 function shake_up(i) {
     let info_button = document.querySelectorAll(".about__box__intended-route__element__button");
     info_button[i].style = "width: 35px;top: 10px;left: 10px;border-radius: 50%;animation: shake-up 0.8s";
