@@ -147,6 +147,7 @@ header{
 
 
 .introduction{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -157,12 +158,13 @@ header{
 }
 
 .introduction-box{
-    height: 450px;
+    height: auto;
     width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 30px;
+    margin: 100px 30px;
+    padding: 10px;
 }
 
 .introduction__me-box__name{
@@ -190,6 +192,15 @@ header{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+.introduction__me{
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+    transform: translateX(-50%);
+    opacity: 0.4;
+    width: 450px;
 }
 
 .button{
@@ -356,6 +367,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 340px;
 }
 
 .blog__empty{
@@ -507,6 +519,10 @@ footer{
         width: 100%;
         justify-content: center;
     }
+
+    .introduction__me{
+        opacity: 0.3;
+    }
 }
 
 @media (max-width: 990px){
@@ -514,7 +530,6 @@ footer{
         flex-direction: column;
     }
 
-    
     .about__box__intended-route__next{
         transform: rotate(90deg);
     }
@@ -541,14 +556,28 @@ footer{
         align-items: center;
     }
 
+    .introduction__me-box{
+        margin: 50px 0px 0px 0px;
+    }
+
     .introduction-box{
-        height: 400px;
+        height: 300px;
         width: 70%;
         min-width: 300px;
+        padding: 10px;
     }
 
     button, button span{
         font-size: 0.9rem;
+    }
+
+    .introduction__me{
+        filter: blur(2px);
+        width: 350px;
+    }
+
+    .introduction__status-box{
+        margin: 20px 0px 120px 0px;
     }
 }
 
@@ -586,22 +615,27 @@ footer{
 }
 
 @media (max-width: 460px){
-    
     .introduction__me-box__name{
         font-size: 2.5rem;
     }
-
+    
     .introduction-box{
         padding: 0;
-        height: 400px;
     }
-
+    
     .introduction__me-box__name span{
         font-size: 2.5rem;
     }
     
     .introduction__me-box__name::after{
         height: 1px;
+    }
+
+    .introduction__me{
+        filter: blur(0px);
+        left: 50%;
+        width: 190px;
+        opacity: 0.4;
     }
 
     .button{
@@ -621,7 +655,6 @@ footer{
     }
     
     .contact__box{
-        margin-top: 20px;
         margin-bottom: 40px;
     }
 
