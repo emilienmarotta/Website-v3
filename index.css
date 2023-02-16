@@ -632,10 +632,7 @@ footer{
     }
 
     .introduction__me{
-        filter: blur(0px);
-        left: 50%;
-        width: 190px;
-        opacity: 0.5;
+        width: 320px;
     }
 
     .button{
