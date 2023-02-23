@@ -197,10 +197,11 @@ header{
 .introduction__me{
     position: absolute;
     left: 45%;
-    bottom: 0;
+    bottom: 0%;
     transform: translateX(-50%);
     opacity: 0.4;
     width: 450px;
+    z-index: -1;
 }
 
 .button{
@@ -632,6 +633,7 @@ footer{
 
     .introduction__me{
         width: 320px;
+        left: 50%;
     }
 
     .button{
