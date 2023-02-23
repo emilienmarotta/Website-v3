@@ -23,8 +23,8 @@
         <div class="introduction-box introduction__me-box">
             <div class="introduction__me-box__name">EMILIEN MAROTTA<span>.</span></div>
             <form>
-                <button class="button introduction__me-box__button introduction__me-box__contact-button" formaction="mailto:emilien.marotta@gmail.com" title="Send me an email">Contact Me</button>
-                <button onclick="window.open('Index/cv.pdf', '_blank')" target="_blank" class="button introduction__me-box__button introduction__me-box__cv-button" title="Download my CV">CV</button>
+                <a class="button introduction__me-box__button introduction__me-box__contact-button" formaction="mailto:emilien.marotta@gmail.com" title="Send me an email">Contact Me</a>
+                <a href="Index/cv.pdf" target="_blank" class="button introduction__me-box__button introduction__me-box__cv-button" title="Download my CV">CV</a>
             </form>
         </div>
         <img class="introduction__me" src="Index/me.png" alt="">
@@ -77,19 +77,19 @@
             <div class="contact__box__contact part-name">Contact</div>
             <div class="contact__box__title sub-part-name">Ways to contact me</div>
             <form class="contact__box__ways-to-contact" target="_blank">
-                <button class="button contact__box__ways-to-contact__element contact__box__ways-to-contact__email" formaction="mailto:emilien.marotta@gmail.com" title="My email">
+                <a class="button contact__box__ways-to-contact__element contact__box__ways-to-contact__email" href="mailto:emilien.marotta@gmail.com" title="My email">
                     <img src="Index/email.png" alt="">
                     <span class="contact__box__ways-to-contact__element__text">emilien.marotta@gmail.com</span>
-                </button>
+                </a>
                 <div class="social-networks">
-                    <button class="button contact__box__ways-to-contact__element contact__box__ways-to-contact__instagram" formaction="https://www.instagram.com/emilienmarotta/" title="My Instagram account">
+                    <a class="button contact__box__ways-to-contact__element contact__box__ways-to-contact__instagram" href="https://www.instagram.com/emilienmarotta/" title="My Instagram account">
                         <img src="Index/instagram.png" alt="">
                         <span class="contact__box__ways-to-contact__element__text">@emilienmarotta</span>
-                    </button>
-                    <button class="button contact__box__ways-to-contact__element contact__box__ways-to-contact__twitter" formaction="https://twitter.com/emilien_marotta" title="My Twitter account">
+                    </a>
+                    <a class="button contact__box__ways-to-contact__element contact__box__ways-to-contact__twitter" href="https://twitter.com/emilien_marotta" title="My Twitter account">
                         <img src="Index/twitter.png" alt="">
                         <span class="contact__box__ways-to-contact__element__text">@emilien_marotta</span>
-                    </button>
+                    </a>
                 </div>
             </form>
         </div>
@@ -133,6 +133,6 @@
             <div class="low-footer__year"></div>
         </div>
     </footer>
-    <a id="return-top" onclick="return_top_animation()" href="#"><img class="return-top" src="Index/top.png" alt="top"></a>
+    <img onclick="window.scrollTo({top:0,behavior:'smooth'})" class="return-top" src="Index/top.png" alt="top">
     <script src="index.js"></script>
 </html>
