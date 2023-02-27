@@ -421,6 +421,10 @@ header{
     width: 30px;
 }
 
+.contact__box__ways-to-contact__linkedin img{
+    width: 25px;
+}
+
 .contact__box__ways-to-contact__element{
     display: flex;
     align-items: center;
