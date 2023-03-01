@@ -146,6 +146,28 @@ header{
     color: #6495ed;
 }
 
+.language__choice{
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    border: 5px solid rgb(34,34,40);
+}
+
+.language__choice:hover{
+    cursor: pointer;
+}
+
+.language__choice img{
+    width: 30px;
+}
+
 
 .introduction{
     position: relative;
@@ -200,7 +222,7 @@ header{
     left: 45%;
     bottom: 0%;
     transform: translateX(-50%);
-    opacity: 0.4;
+    opacity: 0.5;
     width: 450px;
     z-index: -1;
 }
@@ -430,6 +452,7 @@ header{
     align-items: center;
     justify-content: space-around;
     gap: 10px;
+    height: 30px;
 }
 
 
@@ -544,6 +567,10 @@ footer{
 }
 
 @media (max-width: 770px){
+    .language__choice{
+        right: 11%;
+    }
+    
     .menu{
         width: 100%;
         margin: 0;
