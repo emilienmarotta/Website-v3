@@ -193,9 +193,9 @@ function translate_in_french() {
     high__footer__element__title[0].innerHTML = "Études";
     high__footer__element__title[2].innerHTML = "Projets";
     const high__footer__element__elements__cybersecurity = document.getElementsByClassName("high-footer__element__elements__cybersecurity")[0];
-    high__footer__element__elements__cybersecurity.innerHTML = "Cybersécurité";
+    high__footer__element__elements__cybersecurity.innerHTML = "<a href='https://mines-nancy.univ-lorraine.fr/formation/mastere-specialise-cybersecurite-attaque-defense-des-systemes-informatiques/'>Cybersécurité</a>";
     const high__footer__element__elements__download = document.getElementsByClassName("high-footer__element__elements__download")[0];
-    high__footer__element__elements__download.innerHTML = "Télécharger";
+    high__footer__element__elements__download.innerHTML = "<a href='Index/cv.pdf' target='_blank'>Télécharger</a>";
 }
 
 function translate_in_english() {
@@ -248,7 +248,7 @@ function translate_in_english() {
     high__footer__element__title[0].innerHTML = "Studies";
     high__footer__element__title[2].innerHTML = "Projects";
     const high__footer__element__elements__cybersecurity = document.getElementsByClassName("high-footer__element__elements__cybersecurity")[0];
-    high__footer__element__elements__cybersecurity.innerHTML = "Cybersecurity";
+    high__footer__element__elements__cybersecurity.innerHTML = "<a href='https://mines-nancy.univ-lorraine.fr/formation/mastere-specialise-cybersecurite-attaque-defense-des-systemes-informatiques/'>Cybersecurity</a>";
     const high__footer__element__elements__download = document.getElementsByClassName("high-footer__element__elements__download")[0];
-    high__footer__element__elements__download.innerHTML = "Download";
+    high__footer__element__elements__download.innerHTML = "<a href='Index/cv.pdf' target='_blank'>Download</a>";
 }
