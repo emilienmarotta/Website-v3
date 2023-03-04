@@ -32,7 +32,7 @@ function change_content(i) {
             if (language == "english") {
                 divMiage.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/back.png" alt="Back" style="width:35px" title=""><span></span><p style='z-index:8;color:#6495ed'><a href="https://idmc.univ-lorraine.fr/idmc-parcours-miage/">MIAGE</a></p><ul ${ulCSS}><li>Software Engineering</li><li>Cloud Computing</li><li>Data Science</li><li>Artificial Intelligence</li><li>Business Intelligence</li><li>Project Management</li><li>MIS</li><li>Applied Mathematics</li><li>IT Law</li></ul>`;
             } else {
-                divMiage.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/back.png" alt="Back" style="width:35px" title=""><span></span><p style='z-index:8;color:#6495ed'><a href="https://idmc.univ-lorraine.fr/idmc-parcours-miage/">MIAGE</a></p><ul style='z-index:8;display:flex;flex-direction:column;justify-content:center;width:100%;margin-left:3%;'><li>Ingénierie Logicielle</li><li>Cloud Computing</li><li>Sciences des Données</li><li>Intelligence Artificielle</li><li>Informatique Décisionnelle</li><li>Gestion de Projet</li><li>Management des SI</li><li>Mathématiques Appliquées</li><li>Droit Informatique</li></ul>`;
+                divMiage.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/back.png" alt="Back" style="width:35px" title=""><span></span><p style='z-index:8;color:#6495ed'><a href="https://idmc.univ-lorraine.fr/idmc-parcours-miage/">MIAGE</a></p><ul style='z-index:8;display:flex;flex-direction:column;justify-content:center;width:100%;margin-left:15%;'><li>Ingénierie Logicielle</li><li>Cloud Computing</li><li>Sciences des Données</li><li>Intelligence Artificielle</li><li>Business Intelligence</li><li>Gestion de Projet</li><li>Management des SI</li><li>Mathématiques</li><li>Droit Informatique</li></ul>`;
             }
         } else {
             statusMiage = 0;
@@ -101,7 +101,7 @@ function change_boxes_lang(i) {
             }
         } else {
             if (statusMiage == 1) {
-                divMiage.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/back.png" alt="Back" style="width:35px" title=""><span></span><p style='z-index:8;color:#6495ed'><a href="https://idmc.univ-lorraine.fr/idmc-parcours-miage/">MIAGE</a></p><ul style='z-index:8;display:flex;flex-direction:column;justify-content:center;width:100%;margin-left:3%;'><li>Ingénierie Logicielle</li><li>Cloud Computing</li><li>Sciences des Données</li><li>Intelligence Artificielle</li><li>Informatique Décisionnelle</li><li>Gestion de Projet</li><li>Management des SI</li><li>Mathématiques Appliquées</li><li>Droit Informatique</li></ul>`;
+                divMiage.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/back.png" alt="Back" style="width:35px" title=""><span></span><p style='z-index:8;color:#6495ed'><a href="https://idmc.univ-lorraine.fr/idmc-parcours-miage/">MIAGE</a></p><ul style='z-index:8;display:flex;flex-direction:column;justify-content:center;width:100%;margin-left:15%;'><li>Ingénierie Logicielle</li><li>Cloud Computing</li><li>Sciences des Données</li><li>Intelligence Artificielle</li><li>Business Intelligence</li><li>Gestion de Projet</li><li>Management des SI</li><li>Mathématiques</li><li>Droit Informatique</li></ul>`;
             }
         }
     } else {
@@ -232,7 +232,7 @@ function translate_in_english() {
         miage__text.innerHTML = "MIAGE master's degree<br>(Bac+3 to Bac+5)";
     }
     if (mines__text !== undefined) {
-        mines__text.innerHTML = "Specialised master's degree in Cybersecurity<br>(Bac+5 to Bac+6)";
+        mines__text.innerHTML = "Specialised master's degree<br>in Cybersecurity<br>(Bac+5 to Bac+6)";
     }
 
     // Blog

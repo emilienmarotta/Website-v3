@@ -648,6 +648,20 @@ footer{
         grid-column: 2;
     }
 }
+@media (max-width: 486px){
+    .contact__box__ways-to-contact__element__text{
+        display: none;
+    }
+    
+    .contact__box__ways-to-contact{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact__box__ways-to-contact__element{
+        width: 30px;
+    }
+}
 
 @media (max-width: 460px){
     .introduction__me-box__name{
@@ -689,15 +703,6 @@ footer{
     
     .contact__box{
         margin-bottom: 40px;
-    }
-
-    .contact__box__ways-to-contact{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .contact__box__ways-to-contact__element__text{
-        display: none;
     }
 
     .high-footer__studies{
