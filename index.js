@@ -56,7 +56,7 @@ function change_content(i) {
             if (language == "english") {
                 divMines.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px" title="Programme"><span></span><img src="Index/mines.png" alt="Cybersecurity"><div class="about__box__intended-route__element__text mines__text">Specialised master's degree<br>in Cybersecurity <br>(Bac+5 to Bac+6)</div>`;
             } else {
-                divMines.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px" title="Programme"><span></span><img src="Index/mines.png" alt="Cybersecurity"><div class="about__box__intended-route__element__text mines__text">Mastère spécialisé en Cybersécurité<br>(Bac+5 à Bac+6)</div>`;
+                divMines.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px" title="Programme"><span></span><img src="Index/mines.png" alt="Cybersecurity"><div class="about__box__intended-route__element__text mines__text">Mastère spécialisé en<br>Cybersécurité<br>(Bac+5 à Bac+6)</div>`;
             }
         }
     }
@@ -177,7 +177,7 @@ function translate_in_french() {
         miage__text.innerHTML = "Master MIAGE<br>(Bac+3 à Bac+5)";
     }
     if (mines__text !== undefined) {
-        mines__text.innerHTML = "Mastère spécialisé en Cybersécurité<br>(Bac+5 à Bac+6)";
+        mines__text.innerHTML = "Mastère spécialisé en<br>Cybersécurité<br>(Bac+5 à Bac+6)";
     }
 
     // Blog
