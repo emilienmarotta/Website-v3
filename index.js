@@ -54,7 +54,7 @@ function change_content(i) {
         } else {
             statusMines = 0;
             if (language == "english") {
-                divMines.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px" title="Programme"><span></span><img src="Index/mines.png" alt="Cybersecurity"><div class="about__box__intended-route__element__text mines__text">Specialised master's degree in Cybersecurity <br>(Bac+5 to Bac+6)</div>`;
+                divMines.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px" title="Programme"><span></span><img src="Index/mines.png" alt="Cybersecurity"><div class="about__box__intended-route__element__text mines__text">Specialised master's degree<br>in Cybersecurity <br>(Bac+5 to Bac+6)</div>`;
             } else {
                 divMines.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px" title="Programme"><span></span><img src="Index/mines.png" alt="Cybersecurity"><div class="about__box__intended-route__element__text mines__text">Mastère spécialisé en Cybersécurité<br>(Bac+5 à Bac+6)</div>`;
             }
