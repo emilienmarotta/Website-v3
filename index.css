@@ -545,7 +545,7 @@ footer{
     cursor: pointer;
 }
 
-.return-top:active{
+.return-top:focus{
     transition: 0.2s ease-in-out;
     transform: translateY(0);
 }
