@@ -545,6 +545,12 @@ footer{
     cursor: pointer;
 }
 
+.return-top:active{
+    transition: 0.2s ease-in-out;
+    transform: translateY(0);
+}
+
+
 @media (max-width: 1175px){
     .about__box__intended-route{
         width: 100%;
