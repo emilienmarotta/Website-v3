@@ -540,11 +540,9 @@ footer{
 }
 
 .return-top:hover{
-    transition: 0.2s ease-in-out;
-    transform: translateY(-10%);
     cursor: pointer;
-    touch-action: manipulation;
 }
+
 
 @media (max-width: 1175px){
     .about__box__intended-route{
