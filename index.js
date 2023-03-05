@@ -70,14 +70,18 @@ function updateYearCC() {
     document.getElementsByClassName("low-footer__year")[0].innerHTML = year;
 }
 
+let ongoing_animation = false;
 
 function shake_up(i) {
     let info_button = document.querySelectorAll(".about__box__intended-route__element__button");
-    info_button[i].style = "width: 35px;top: 10px;left: 10px;border-radius: 50%;animation: shake-up 0.8s";
-    
-    setTimeout(() => {
-        info_button[i].style = "width: 35px;top: 10px;left: 10px;border-radius: 50%;";
-    }, 800);
+    if (!ongoing_animation) {
+        ongoing_animation = true;
+        info_button[i].style = "width: 35px;top: 10px;left: 10px;border-radius: 50%;animation: shake-up 0.8s";
+        setTimeout(() => {
+            info_button[i].style = "width: 35px;top: 10px;left: 10px;border-radius: 50%;";
+            ongoing_animation = false;
+        }, 800);
+    }
 }
 
 
