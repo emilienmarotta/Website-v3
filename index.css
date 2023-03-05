@@ -543,13 +543,8 @@ footer{
     transition: 0.2s ease-in-out;
     transform: translateY(-10%);
     cursor: pointer;
+    touch-action: manipulation;
 }
-
-.return-top:focus{
-    transition: 0.2s ease-in-out;
-    transform: translateY(0);
-}
-
 
 @media (max-width: 1175px){
     .about__box__intended-route{
