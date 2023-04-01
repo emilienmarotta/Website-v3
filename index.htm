@@ -10,60 +10,60 @@
     <link rel="icon" type="image/png" href="Index/icon.png">
     <title>Emilien Marotta</title>
 </head>
-<body onload="updateYearCC();change_language_button()">
+<body onload="updateYearCC()">
     <header>
         <img src="Index/logo.png" alt="Logo" class="logo">
         <nav class="menu">
-            <a class="menu__element" href="#">Home</a>
-            <a class="menu__element" href="#about">About</a>
+            <a class="menu__element" href="#">Accueil</a>
+            <a class="menu__element" href="#about">À propos</a>
             <a class="menu__element" href="#blog">Blog</a>
             <a class="menu__element" href="#contact">Contact</a>
         </nav>
     </header>
     <div class="introduction">
-        <button onclick="change_language_button()" title="Site en français" class="language__choice"><img src="Index/english.png"></button>
+        <button onclick="change_language_button()" title="Site in english" class="language__choice"><img src="Index/french.png"></button>
         <div class="introduction-box introduction__me-box">
             <div class="introduction__me-box__name">EMILIEN MAROTTA<span>.</span></div>
             <form>
-                <a class="button introduction__me-box__button introduction__me-box__contact-button" href="mailto:emilien.marotta@gmail.com" title="Send me an email">Contact Me</a>
-                <a href="Index/cv.pdf" target="_blank" class="button introduction__me-box__button introduction__me-box__cv-button" title="Download my CV">CV</a>
+                <a class="button introduction__me-box__button introduction__me-box__contact-button" href="mailto:emilien.marotta@gmail.com" title="M'envoyer un email">Me contacter</a>
+                <a href="Index/cv.pdf" target="_blank" class="button introduction__me-box__button introduction__me-box__cv-button" title="Télécharger mon CV">CV</a>
             </form>
         </div>
         <img class="introduction__me" src="Index/me.png" alt="">
         <div class="introduction-box introduction__status-box">
-            <div class="introduction__status-box__status part-name">Status</div>
-            <div class="introduction__status-box__title sub-part-name">Mathematics & Computer Science Student at IDMC - Nancy</div>
-            <div class="introduction__status-box__description">I study mathematics and computer science in order to work in cybersecurity.</div>
+            <div class="introduction__status-box__status part-name">Statut</div>
+            <div class="introduction__status-box__title sub-part-name">Étudiant en Mathématiques & Informatique à l'IDMC - Nancy</div>
+            <div class="introduction__status-box__description">J'étudie les mathématiques et l'informatique dans le but de travailler dans la cybersécurité.</div>
         </div>
     </div>
     <div id="about" class="about">
         <div class="about__box">
-            <div class="about__box__about part-name">About</div>
-            <div class="about__box__title sub-part-name">Intended studies</div>
+            <div class="about__box__about part-name">À propos</div>
+            <div class="about__box__title sub-part-name">Études envisagées</div>
             <div class="about__box__intended-route">
                 <div class="about__box__intended-route__element about__box__intended-route__miashs" onclick="shake_up(0)">
-                    <img onclick="change_content(0)" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px" title="Programme">
+                    <img onclick="change_content(0)" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px">
                     <span></span>
                     <img src="Index/miashs.png" alt="MIASHS">
-                    <div class="about__box__intended-route__element__text miashs__text">MIASHS degree<br>(Bac to Bac+3)</div>
+                    <div class="about__box__intended-route__element__text miashs__text">Licence MIASHS<br>(Bac à Bac+3)</div>
                 </div>
                 <div class="about__box__intended-route__next">
                     <img src="Index/right-arrow.png" alt="Then">
                 </div>
                 <div class="about__box__intended-route__element about__box__intended-route__miage" onclick="shake_up(1)">
-                    <img onclick="change_content(1)" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px" title="Programme">
+                    <img onclick="change_content(1)" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px">
                     <span></span>
                     <img src="Index/miage.png" alt="MIAGE">
-                    <div class="about__box__intended-route__element__text miage__text">MIAGE master's degree<br>(Bac+3 to Bac+5)</div>
+                    <div class="about__box__intended-route__element__text miage__text">Master MIAGE<br>(Bac+3 à Bac+5)</div>
                 </div>
                 <div class="about__box__intended-route__next">
                     <img src="Index/right-arrow.png" alt="Then">
                 </div>
                 <div class="about__box__intended-route__element about__box__intended-route__mines" onclick="shake_up(2)">
-                    <img onclick="change_content(2)" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px" title="Programme">
+                    <img onclick="change_content(2)" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px">
                     <span></span>
                     <img src="Index/mines.png" alt="Cybersecurity">
-                    <div class="about__box__intended-route__element__text mines__text">Specialised master's degree<br>in Cybersecurity<br>(Bac+5 to Bac+6)</div>
+                    <div class="about__box__intended-route__element__text mines__text">Mastère spécialisé en<br>Cybersécurité<br>(Bac+5 à Bac+6)</div>
                 </div>
             </div>
         </div>
@@ -72,12 +72,12 @@
         <div class="blog__box">
             <div class="blog__box__blog part-name">Blog</div>
         </div>
-        <div class="blog__empty">Nothing at this time...</div>
+        <div class="blog__empty">Rien pour l'instant...</div>
     </div>
     <div id="contact" class="contact">
         <div class="contact__box">
             <div class="contact__box__contact part-name">Contact</div>
-            <div class="contact__box__title sub-part-name">Ways to contact me</div>
+            <div class="contact__box__title sub-part-name">Moyens de me contacter</div>
             <form class="contact__box__ways-to-contact" target="_blank">
                 <a class="button contact__box__ways-to-contact__element contact__box__ways-to-contact__email" href="mailto:emilien.marotta@gmail.com" title="Email">
                     <img src="Index/email.png" alt="">
@@ -99,11 +99,11 @@
     <footer>
         <div class="high-footer">
             <div class="high-footer__element high-footer__studies">
-                <div class="high-footer__element__title">Studies</div>
+                <div class="high-footer__element__title">Études</div>
                 <div class="high-footer__element__elements">
                     <div class="high-footer__element__elements__miashs"><a href="https://idmc.univ-lorraine.fr/parcours-miashs/">MIASHS</a></div>
                     <div class="high-footer__element__elements__miage"><a href="https://idmc.univ-lorraine.fr/idmc-parcours-miage/">MIAGE</a></div>
-                    <div class="high-footer__element__elements__cybersecurity"><a href="https://mines-nancy.univ-lorraine.fr/formation/mastere-specialise-cybersecurite-attaque-defense-des-systemes-informatiques/">Cybersecurity</a></div>
+                    <div class="high-footer__element__elements__cybersecurity"><a href="https://mines-nancy.univ-lorraine.fr/formation/mastere-specialise-cybersecurite-attaque-defense-des-systemes-informatiques/">Cybersécurité</a></div>
                 </div>
             </div>
             <div class="high-footer__element high-footer__contact">
@@ -115,7 +115,7 @@
                 </div>
             </div>
             <div class="high-footer__element high-footer__projects">
-                <div class="high-footer__element__title">Projects</div>
+                <div class="high-footer__element__title">Projets</div>
                 <div class="high-footer__element__elements">
                     <div class="high-footer__element__elements__blog"><a href="#blog">Blog</a></div>
                     <div class="high-footer__element__elements__github"><a href="https://github.com/emilienmarotta">GitHub</a></div>
@@ -125,7 +125,7 @@
             <div class="high-footer__element high-footer__cv">
                 <div class="high-footer__element__title">CV</div>
                 <div class="high-footer__element__elements">
-                    <div class="high-footer__element__elements__download"><a href="Index/cv.pdf" target="_blank">Download</a></div>
+                    <div class="high-footer__element__elements__download"><a href="Index/cv.pdf" target="_blank">Télécharger</a></div>
                 </div>
             </div>
         </div>
