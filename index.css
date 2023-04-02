@@ -394,8 +394,18 @@ header{
     min-width: 340px;
 }
 
-.blog__empty{
-    margin-top: 50px;
+.next__post{
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 5px;
+}
+
+.next__post span{
+    font-weight: normal;
+    font-size: 1rem;
+    font-style: italic;
+    color: #aaa;
 }
 
 .contact{
