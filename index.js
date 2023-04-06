@@ -13,7 +13,7 @@ function change_content(i) {
             divMiashs.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/back.png" alt="Back" style="width:35px"><span></span><p style='z-index:8;color:#6495ed'><a href="https://idmc.univ-lorraine.fr/parcours-miashs/">MIASHS</a></p><ul style='z-index:8;display:flex;flex-direction:column;justify-content:center;width:100%;margin-left:15%;'><li>Mathématiques</li><li>Informatique</li><li>Intelligence Artificielle</li><li>Sciences Cognitives</li><li>Bases de Données</li><li>Droit</li><li>Économie</li><li>Gestion</li><li>Systèmes d'Information</li></ul>`;
         } else { 
             statusMiashs = 0;
-            divMiashs.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px"><span></span><img src="Index/miashs.png" alt="MIASHS"><div class="about__box__intended-route__element__text miashs__text">Licence MIASHS<br>(Bac à Bac+3)</div>`;
+            divMiashs.innerHTML = `<img onclick="change_content(${i})" class="about__box__intended-route__element__button" src="Index/info.png" alt="Infos" style="width:35px"><span></span><img src="Index/miashs.png" alt="MIASHS"><div class="about__box__intended-route__element__text miashs__text">Licence MIASHS<br>(Bac à Bac+3)<br><p class="ongoing" style="color:#6495ed">1ère année</p></div>`;
         }
     } else if(i == 1) {
         let divMiage = document.getElementsByClassName("about__box__intended-route__miage")[0];
