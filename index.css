@@ -60,20 +60,6 @@
     }
 }
 
-@keyframes translation-2{
-    20%{
-        padding: 17px;
-    }
-
-    50%{
-        padding: 23px;
-    }
-
-    100%{
-        padding: 20px;
-    }
-}
-
 html{
     scroll-behavior: smooth;
 }
@@ -204,10 +190,10 @@ header{
 }
 
 .introduction__me-box{
-    padding: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
     border-top: 3px solid #dedede;
     border-left: 3px solid #dedede;
-    animation: translation-2 1.2s ease-in-out;
 }
 
 .introduction__me-box__name{
