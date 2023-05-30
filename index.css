@@ -506,7 +506,15 @@ footer > p {
     cursor: pointer;
 }
 
-.nav-link::selection {
+.nav-link::selection, .navbar .menu-element::selection, .configuration span::selection {
+    background-color: rgba(0,0,0,0);
+}
+
+.button::selection {
+    background-color: rgba(0,0,0,0);
+}
+
+#warning::selection {
     background-color: rgba(0,0,0,0);
 }
 
