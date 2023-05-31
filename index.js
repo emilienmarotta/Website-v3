@@ -37,3 +37,13 @@ menuItems.forEach(function(item) {
         navbar.classList.toggle('mobile-menu');    
     });
 });
+
+
+document.addEventListener('click', function(event) {
+    const isClickInsideMenu = hamburgerMenu.contains(event.target);
+    const isClickInsideHamburger = navbar.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickInsideHamburger) {
+        navbar.classList.toggle('mobile-menu');
+    }
+});
