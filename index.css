@@ -525,20 +525,6 @@ footer > p {
     color: inherit;
 }
 
-#pre-container {
-    position: absolute;
-    left: 0;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-}
-
-#pre-container div {
-    width: 98%;
-    height: 70px;
-    background-color: #d0dbff;
-}
-
 @media (max-width: 1100px) {
     .contact-media {
         gap: 100px;
@@ -727,12 +713,6 @@ footer > p {
         width: 90%;
         position: relative;
         left: -10px;
-    }
-}
-
-@media screen and (max-width: 330px) {
-    #pre-container {
-        display: none;
     }
 }
 
