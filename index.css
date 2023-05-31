@@ -675,6 +675,10 @@ footer > p {
 }
 
 @media screen and (max-width: 600px) {
+    .first-subcontainer, .second-subcontainer, .third-subcontainer {
+        flex-direction: column-reverse;
+    }
+
     .bloc-2 img {
         width: 250px;
     }
@@ -685,12 +689,6 @@ footer > p {
 
     .bloc-1 {
         width: 60%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .first-subcontainer, .second-subcontainer, .third-subcontainer {
-        flex-direction: column-reverse;
     }
 
     .second-subcontainer img, .third-subcontainer img {
@@ -713,6 +711,23 @@ footer > p {
         width: 90%;
         position: relative;
         left: -10px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+
+    header {
+        width: 100vw;
+    }
+    
+    #banner {
+        width: 100vw;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
     }
 }
 
