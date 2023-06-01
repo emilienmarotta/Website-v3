@@ -14,7 +14,7 @@ hamburgerMenu.addEventListener('click', () => {
 const bannerImage = document.getElementById('banner-img');
 
 function changeImageSource() {
-    if (window.innerWidth < 750 && window.innerWidth >= 600) {
+    if (window.innerWidth < 1000 && window.innerWidth >= 600) {
         bannerImage.src = 'Index/medium-banner.png';
     } else if (window.innerWidth < 600 && window.innerWidth >= 500) {
         bannerImage.src = 'Index/small-banner.png';
