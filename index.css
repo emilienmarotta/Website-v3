@@ -574,14 +574,14 @@ footer a.dark-theme {
 }
 
 .button.dark-theme {
-    background-color: #d0dbff;
-    color: #333;
+    background-color: #5656ff;
+    color: white;
 }
 
 .button.dark-theme:hover {
-    background-color: #dbe3fe;
-    color: #421dee;
-    box-shadow: 5px 5px #421dee;
+    background-color: #6a6aff;
+    color: white;
+    box-shadow: 5px 5px #d0dbff;
 }
 
 @media (max-width: 1100px) {

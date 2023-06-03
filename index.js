@@ -62,7 +62,10 @@ const githubImg = document.getElementById('githubImg');
 
 const themeButton = document.getElementById('theme');
 const itemsToChangeColor = document.querySelectorAll('.change-color');
-themeButton.addEventListener('click', () => {
+
+let isDarkModeEnabled = localStorage.getItem('darkModeEnabled');
+
+if (isDarkModeEnabled === 'true') {
     for (item of itemsToChangeColor) {
         item.classList.toggle('dark-theme');
     }
@@ -77,13 +80,10 @@ themeButton.addEventListener('click', () => {
     moonImg.classList.toggle('img-dark-theme');
     if (moonImg.classList.contains('img-dark-theme')) {
         moonImg.src = 'Index/sun.png'; 
-        moonImg.style.width = '25px';
-        moonImg.style.position = 'relative';
-        moonImg.style.right = '3px';
+        moonImg.style.width = '20px';
     } else {
         moonImg.src = 'Index/moon.png';
         moonImg.style.width = '20px';
-        moonImg.style.position = 'inherit';
     }
     worldImg.classList.toggle('img-dark-theme');
     if (worldImg.classList.contains('img-dark-theme')) {
@@ -115,5 +115,75 @@ themeButton.addEventListener('click', () => {
         githubImg.src = 'Index/github2.png';
     } else {
         githubImg.src = 'Index/github.png';
+    }
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkModeEnabled', 'true');
+        console.log('add');
+    } else {
+        localStorage.removeItem('darkModeEnabled');
+        console.log('remove');
+    }
+}
+    
+
+themeButton.addEventListener('click', () => {
+    for (item of itemsToChangeColor) {
+        item.classList.toggle('dark-theme');
+    }
+    for (img of arrowImg) {
+        img.classList.toggle('img-dark-theme');
+        if (img.classList.contains('img-dark-theme')) {
+            img.src = 'Index/arrow2.png';
+        } else {
+            img.src = 'Index/arrow.png';
+        }
+    }
+    moonImg.classList.toggle('img-dark-theme');
+    if (moonImg.classList.contains('img-dark-theme')) {
+        moonImg.src = 'Index/sun.png'; 
+        moonImg.style.width = '20px';
+    } else {
+        moonImg.src = 'Index/moon.png';
+        moonImg.style.width = '20px';
+    }
+    worldImg.classList.toggle('img-dark-theme');
+    if (worldImg.classList.contains('img-dark-theme')) {
+        worldImg.src = 'Index/world2.png';
+        
+    } else {
+        worldImg.src = 'Index/world.png';
+    }
+    hamburgerImg.classList.toggle('img-dark-theme');
+    if (hamburgerImg.classList.contains('img-dark-theme')) {
+        hamburgerImg.src = 'Index/hamburger2.png';
+    } else {
+        hamburgerImg.src = 'Index/hamburger.png';
+    }
+    studiesImg.classList.toggle('img-dark-theme');
+    if (studiesImg.classList.contains('img-dark-theme')) {
+        studiesImg.src = 'Index/studies2.png';
+    } else {
+        studiesImg.src = 'Index/studies.png';
+    }
+    rootmeImg.classList.toggle('img-dark-theme');
+    if (rootmeImg.classList.contains('img-dark-theme')) {
+        rootmeImg.src = 'Index/rootme2.png';
+    } else {
+        rootmeImg.src = 'Index/rootme.png';
+    }
+    githubImg.classList.toggle('img-dark-theme');
+    if (githubImg.classList.contains('img-dark-theme')) {
+        githubImg.src = 'Index/github2.png';
+    } else {
+        githubImg.src = 'Index/github.png';
+    }
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkModeEnabled', 'true');
+        console.log('add');
+    } else {
+        localStorage.removeItem('darkModeEnabled');
+        console.log('remove');
     }
 });
