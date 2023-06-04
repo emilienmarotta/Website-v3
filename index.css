@@ -147,6 +147,10 @@ a img {
     color: #421dee;
 }
 
+.no-select {
+    user-select: none;
+}
+
 .configuration ul {
     list-style: none;
     padding: 0;
