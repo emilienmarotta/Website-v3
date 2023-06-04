@@ -539,6 +539,14 @@ nav ul ul.dark-theme, .configuration ul ul.dark-theme {
     background-color: #282828;
 }
 
+.configuration a.dark-theme {
+    color: white;
+}
+
+.configuration .parent:hover a.dark-theme {
+    color: #421dee;
+}
+
 nav ul ul li a.dark-theme:hover, .configuration ul ul div.dark-theme:hover {
     background-color: #d0dbff;
 }

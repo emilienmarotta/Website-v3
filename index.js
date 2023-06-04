@@ -188,7 +188,7 @@ themeButton.addEventListener('click', () => {
 
 var translations = {
     fr: {
-        warning: 'Le site est en phase de développement. Certaines fonctionnalités ne sont pas encore opérationnelles.',
+        warning: '',
         nav1: 'Accueil',
         nav2: 'Projets',
         nav21: 'RootMe',
@@ -247,7 +247,7 @@ var translations = {
         copyright: 'Copyright © 2023 Emilien Marotta. Tous droits réservés, sauf indication contraire.'
     },
     en: {
-        warning: 'The site is currently under development. Some functions are not yet operational.',
+        warning: '',
         nav1: 'Home',
         nav2: 'Projects',
         nav21: 'RootMe',
