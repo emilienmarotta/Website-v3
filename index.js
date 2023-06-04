@@ -330,10 +330,10 @@ function changeLanguage(lang) {
     }
 }
 
-if (defaultLanguage === 'french') {
-    changeLanguage('fr');
-} else {
+if (defaultLanguage === 'english') {
     changeLanguage('en');
+} else {
+    changeLanguage('fr');
 }
 
 const langBtnFr = document.getElementById('french');
