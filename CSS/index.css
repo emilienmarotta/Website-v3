@@ -397,6 +397,17 @@ a {
     width: 50px;
 }
 
+#social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#social-media img {
+    width: 40px;
+}
+
 #copyright {
     text-align: center;
     padding: 0 5px 30px 5px;

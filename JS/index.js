@@ -85,3 +85,20 @@ function takeOff() {
         document.getElementById("rocket").src = "Index/rocket-0.png";
     }, 1000);
 }
+
+
+function linkedinMouseOver() {
+    document.getElementById("linkedin").src = "Index/linkedin-2.png";
+}
+
+function linkedinMouseOut() {
+    document.getElementById("linkedin").src = "Index/linkedin.png";
+}
+
+function instagramMouseOver() {
+    document.getElementById("instagram").src = "Index/instagram-2.png";
+}
+
+function instagramMouseOut() {
+    document.getElementById("instagram").src = "Index/instagram.png";
+}
