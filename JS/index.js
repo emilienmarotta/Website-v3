@@ -48,3 +48,40 @@ window.onload = () => {
     setTimeout(() => {typeText(githubLinkElement, githubLink, 0); typeText(rootmeLinkElement, rootmeLink, 0)}, 200);
 };
 
+
+
+
+let prevScrollY = window.scrollY;
+
+function getScrollDirection() {
+    const scrollY = window.scrollY;
+    const scrollDirection = scrollY > prevScrollY ? 'down' : 'up';
+    prevScrollY = scrollY; 
+    
+    return scrollDirection;
+}
+
+let prevScrollDirection = "down";
+function changeRocketState() {
+    const scrollDirection = getScrollDirection();
+
+    if (prevScrollDirection != scrollDirection) {
+        if (scrollDirection == "down") {
+            document.getElementById("rocket").src = "Index/rocket-0.png";
+        } else {
+            document.getElementById("rocket").src = "Index/rocket-1.png";
+        }
+    }
+
+    prevScrollDirection = scrollDirection;
+}
+
+window.addEventListener("scroll", changeRocketState);
+
+
+function takeOff() {
+    document.getElementById("rocket").src = "Index/rocket-1.png";
+    setTimeout(() => {
+        document.getElementById("rocket").src = "Index/rocket-0.png";
+    }, 1000);
+}
