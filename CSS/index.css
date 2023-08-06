@@ -572,6 +572,10 @@ a {
         right: 30px;
         bottom: 30px;
     }
+
+    #up-button img {
+        width: 40px;
+    }
 }
 
 @media (max-width: 500px) {
