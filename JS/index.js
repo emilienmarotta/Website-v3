@@ -9,13 +9,13 @@ const currentStatusResult = "Second-year MIASHS student at IDMC in Nancy, France
 const currentStatusResultElement = document.getElementById("current-status-result");
 const goal = "Professional goal";
 const goalElement = document.getElementById("goal");
-const goalResult = "IT Security Engineer";
+const goalResult = "Business Intelligence";
 const goalResultElement = document.getElementById("goal-result");
 const githubLink = "GitHub";
 const githubLinkElement = document.getElementById("github-link");
 const rootmeLink = "RootMe";
 const rootmeLinkElement = document.getElementById("rootme-link");
-const quote = "\"There are only two types of companies:#Those that have been hacked,#and those that will be.\"##Robert Mueller#FBI Director, 2012";
+const quote = "\"You can have data without information,#but you cannot have information without data\"##Daniel Keys Moran";
 const quoteElement = document.getElementById("quote");
 
 const prompt2 = document.getElementById("prompt-2");
