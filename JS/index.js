@@ -15,7 +15,7 @@ const githubLink = "GitHub";
 const githubLinkElement = document.getElementById("github-link");
 const rootmeLink = "RootMe";
 const rootmeLinkElement = document.getElementById("rootme-link");
-const quote = "\"You can have data without information,#but you cannot have information without data\"##Daniel Keys Moran";
+const quote = "\"You can have $ without information,#but you cannot have information without $.\"##Daniel Keys Moran";
 const quoteElement = document.getElementById("quote");
 
 const prompt2 = document.getElementById("prompt-2");
@@ -27,6 +27,8 @@ function typeText(htmlElement, text, charIndex) {
     if (charIndex < text.length) {
         if (text.charAt(charIndex) == "#") {
             htmlElement.innerHTML += "<br>";
+        } else if (text.charAt(charIndex) == "$") {
+            htmlElement.innerHTML += "<span class='green-word'>data</span>";
         } else {
             htmlElement.classList.add("cursor-blink");
             htmlElement.innerHTML += text.charAt(charIndex);
@@ -49,42 +51,32 @@ window.onload = () => {
 };
 
 
-
-
-let prevScrollY = window.scrollY;
-
-function getScrollDirection() {
-    const scrollY = window.scrollY;
-    const scrollDirection = scrollY > prevScrollY ? 'down' : 'up';
-    prevScrollY = scrollY; 
-    
-    return scrollDirection;
+function arrowMouseOver() {
+    document.getElementById("arrow").src = "Index/arrow2.png";
 }
 
-let prevScrollDirection = "down";
-function changeRocketState() {
-    const scrollDirection = getScrollDirection();
+function arrowMouseOut() {
+    document.getElementById("arrow").src = "Index/arrow.png";
+}
 
-    if (prevScrollDirection != scrollDirection) {
-        if (scrollDirection == "down") {
-            document.getElementById("rocket").src = "Index/rocket-0.png";
-        } else {
-            document.getElementById("rocket").src = "Index/rocket-1.png";
-        }
+
+const scrollToTopButton = document.getElementById("up-button");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        scrollToTopButton.classList.add("visible");
+    } else {
+        scrollToTopButton.classList.remove("visible");
     }
+});
 
-    prevScrollDirection = scrollDirection;
-}
+scrollToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
 
-window.addEventListener("scroll", changeRocketState);
-
-
-function takeOff() {
-    document.getElementById("rocket").src = "Index/rocket-1.png";
-    setTimeout(() => {
-        document.getElementById("rocket").src = "Index/rocket-0.png";
-    }, 1000);
-}
 
 
 function linkedinMouseOver() {
@@ -102,3 +94,19 @@ function instagramMouseOver() {
 function instagramMouseOut() {
     document.getElementById("instagram").src = "Index/instagram.png";
 }
+
+
+const cursor = document.querySelector("#cursor");
+const sidebar = document.querySelector("#sidebar");
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const viewportHeight = window.innerHeight;
+  const contentHeight = document.body.scrollHeight;
+  const sidebarHeight = sidebar.clientHeight;
+  const maxCursorTop = sidebarHeight - cursor.clientHeight;
+
+  const cursorTop = (scrollTop / (contentHeight - viewportHeight)) * maxCursorTop;
+
+  cursor.style.top = `${cursorTop}px`;
+});

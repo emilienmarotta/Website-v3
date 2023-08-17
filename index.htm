@@ -15,7 +15,12 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
-    <header>
+    <div id="sidebar">
+        <div id="cursor">
+            <div id="sub-cursor"></div>
+        </div>
+    </div>
+    <header>    
         <div id="presentation-box">
             <h1>Emilien Marotta</h1>
             <div id="current-status"><span class="prompt">></span> </div>
@@ -35,8 +40,7 @@
             </div>
         </div>
     </header>
-    <div id="black-circle"></div>
-    <img id="separator-padlock" src="Index/padlock.png" alt="">
+    <img id="satellite" src="Index/satellite.png">
     <div data-aos="fade-up" id="github-rootme">
         <div data-aos="fade-up" class="gr-container" id="github">
             <div class="three-dots">
@@ -87,7 +91,7 @@
             </div>
         </div>
     </div>
-    <a title="Go up" href="#" id="up-button" onclick="takeOff()"><img src="Index/rocket-0.png" id="rocket"/></a>
+    <div id="up-button" onmouseover="arrowMouseOver()" onmouseout="arrowMouseOut()"><img src="Index/arrow.png" id="arrow"/></div>
     <footer>
         <div id="social-media">
             <a href="https://www.linkedin.com/in/emilienmarotta/" title="LinkedIn" onmouseover="linkedinMouseOver()" onmouseout="linkedinMouseOut()"><img src="Index/linkedin.png" id="linkedin" alt="LinkedIn"></a>
