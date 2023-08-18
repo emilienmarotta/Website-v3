@@ -536,6 +536,15 @@ footer {
     #presentation-box-buttons {
         top: 370px;
     }
+
+    .gr-container {
+        margin-bottom: 100px;
+    }
+
+    #github-rootme {
+        height: 1000px;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -710,11 +719,6 @@ footer {
     #presentation-box, #business-intelligence-quote {
         width: 350px;
     }
-
-    #sidebar {
-        left: 5px;
-        display: block; 
-    }
 }
 
 @media (max-width: 425px) {
@@ -744,13 +748,6 @@ footer {
         width: 135px;
     }
 }
-
-@media (max-width: 360px) {
-    #sidebar {
-        display: none;
-    }
-}
-
 
 @media (max-width: 390px) {
     #presentation-box h1 {

@@ -59,6 +59,16 @@ function arrowMouseOut() {
     document.getElementById("arrow").src = "Index/arrow.png";
 }
 
+const upButton = document.getElementById("up-button");
+
+upButton.addEventListener("touchstart", () => {
+    upButton.src = "Index/arrow2.png";
+});
+
+upButton.addEventListener("touchend", () => {
+    upButton.src = "Index/arrow.png";
+});
+
 
 const scrollToTopButton = document.getElementById("up-button");
 
