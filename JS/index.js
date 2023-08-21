@@ -5,18 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const currentStatus = "Status";
 const currentStatusElement = document.getElementById("current-status");
-const currentStatusResult = "Second-year MIASHS student at IDMC in Nancy, France";
+const currentStatusResult = "Second-year MIASHS-MIAGE student at IDMC in Nancy, France";
 const currentStatusResultElement = document.getElementById("current-status-result");
 const goal = "Professional goal";
 const goalElement = document.getElementById("goal");
 const goalResult = "Business Intelligence";
 const goalResultElement = document.getElementById("goal-result");
-const githubLink = "GitHub";
-const githubLinkElement = document.getElementById("github-link");
-const rootmeLink = "RootMe";
-const rootmeLinkElement = document.getElementById("rootme-link");
-const quote = "\"You can have $ without information,#but you cannot have information without $.\"##Daniel Keys Moran";
-const quoteElement = document.getElementById("quote");
 
 const prompt2 = document.getElementById("prompt-2");
 const prompt3 = document.getElementById("prompt-3");
@@ -43,11 +37,9 @@ function typeText(htmlElement, text, charIndex) {
 
 window.onload = () => {
     typeText(currentStatusElement, currentStatus, 0);
-    typeText(quoteElement, quote, 0);
     setTimeout(() => {currentStatusResultElement.innerHTML = currentStatusResult; prompt2.style.display = "inline-block";}, currentStatus.length * typingSpeed + 300);
     setTimeout(() => typeText(goalElement, goal, 0), currentStatus.length + typingSpeed + 800);
     setTimeout(() => {goalResultElement.innerHTML = goalResult; prompt3.style.display = "inline-block";}, (currentStatus.length + goal.length) * typingSpeed + 1100);
-    setTimeout(() => {typeText(githubLinkElement, githubLink, 0); typeText(rootmeLinkElement, rootmeLink, 0)}, 200);
 };
 
 
@@ -88,7 +80,6 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 
-
 function linkedinMouseOver() {
     document.getElementById("linkedin").src = "Index/linkedin-2.png";
 }
@@ -119,4 +110,27 @@ window.addEventListener("scroll", () => {
   const cursorTop = (scrollTop / (contentHeight - viewportHeight)) * maxCursorTop;
 
   cursor.style.top = `${cursorTop}px`;
+});
+
+
+const nlp = document.getElementById("nlp");
+const informationSystem = document.getElementById("information-system");
+const dataScientistCertif = document.getElementById("data-scientist-certif");
+
+function changeContentNLP(element, newText, oldText) {
+  if (window.innerWidth < 510) { 
+    element.textContent = newText;
+  } else {
+    element.textContent = oldText;
+  }
+}
+
+changeContentNLP(nlp, "NLP", "Natural Language Processing (NLP)");
+changeContentNLP(informationSystem, "IS Management", "Information Systems Management");
+changeContentNLP(dataScientistCertif, "Data Scientist", "Data Scientist Certification");
+
+window.addEventListener('resize', () => {
+    changeContentNLP(nlp, "NLP", "Natural Language Processing (NLP)");
+    changeContentNLP(informationSystem, "IS Management", "Information Systems Management");    
+    changeContentNLP(dataScientistCertif, "Data Scientist", "Data Scientist Certification");
 });
