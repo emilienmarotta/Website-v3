@@ -734,7 +734,7 @@ footer {
         font-size: 1.1rem;
     }
     #up-button {
-        right: 40px;
+        right: 10px;
         bottom: 15px;
     }
 }
@@ -748,6 +748,7 @@ footer {
 @media (max-width: 440px) {
     #presentation-box h1 {
         font-size: 2.3rem;
+        width: 100%;
     }
     #presentation-box #current-status {
         font-size: 1.5rem;
