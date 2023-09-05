@@ -236,6 +236,18 @@ header {
 }
 
 
+#introduction-description {
+    color: #A5D6FF;
+}
+
+#introduction-subdescription {
+    color: #fcfcfc;
+}
+
+.main-word {
+    color: #A5D6FF;
+}
+
 .box {
     width: 80%;
     margin: auto;
@@ -270,11 +282,11 @@ header {
 
 .box-more {
     font-size: 1.8rem;
-    transition: 0.2s ease;
+    transition: 0.2s;
 }
 
-.box-more:hover span, .box-more:hover {
-    color: #FFA28B;
+.box-more:hover {
+    color: #9e8bff;
 }
 
 .box-more:hover .more-arrow {
@@ -299,7 +311,7 @@ header {
     position: relative;
 }
 
-#bi-areas-leader {
+#cybersecurity-areas-leader {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -312,53 +324,101 @@ header {
 
 .selected-line {
     transition: 0.4s ease;
-    opacity: 0;
 }
 
-.bi-areas-element:hover {
+.cybersecurity-areas-element:hover {
     color: #939AFF;
 }
 
 .box-box-element:hover .selected-line {
-    opacity: 1;
     margin-left: 15px;
 }
 
-#bi-areas-title {
+#cybersecurity-areas-title {
     font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
 }
 
-#bi-areas-separator {
-    width: 100px;
+#cybersecurity-areas-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
     height: 2px;
-    border-radius: 50px;
+    width: 100%;
     background-color: #939AFF;
 }
 
-#bi-leader {
+#cybersecurity-leader {
     font-size: 1.5rem;
-    color: #3e424a;
+    color: #51555c;
     width: 60%;
 }
 
-#github-projects {
-    margin-right: auto;
-}
-
 #github-projects-title {
-    font-weight: bold;
+    position: relative;
+    color: #fcfcfc;
 }
 
-#github-projects-separator {
-    width: 245px;
+#github-projects-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
     height: 2px;
-    border-radius: 50px;
-    background-color: #D2A8FF; 
+    width: 100%;
+    background-color: #939AFF;
+}
+
+#projects-box {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.projects-box-element {
+    font-size: 1.5rem;
+    width: 600px;
+    background-color: #23282E;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 15px black;
+    border: 1px solid #3e424a;
+    position: relative;
+}
+
+.projects-box-element-title {
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.projects-box-element-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #939AFF;
+}
+
+.projects-box-element-consult {
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+.projects-box-element-consult:hover {
+    color: #939AFF;
 }
 
 #github-inspiration {
     font-size: 1.5rem;
-    color: #3e424a;
+    color: #51555c;
 }
 
 #github-inspiration a {
@@ -368,7 +428,7 @@ header {
 }
 
 #github-inspiration a:hover {
-    color: #FFA28B;
+    color: #A5D6FF;
 }
 
 .magenta-word {
@@ -379,51 +439,43 @@ header {
     color: #FF7B72;
 }
 
-#idmc-courses {
+#ai-courses {
     width: 500px;
     margin-left: auto;
 }
 
-#idmc-courses-title {
+#areas-title {
     font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
 }
 
-#idmc-courses-separator {
-    width: 433px;
+#areas-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
     height: 2px;
-    border-radius: 50px;
-    background-color: #7EE787; 
+    width: 100%;
+    background-color: #7EE787;
 }
 
-.idmc-courses-element:hover, .idmc-courses-element span:hover {
+.ai-courses-element:hover, .ai-courses-element span:hover {
     color: #7EE787;
 }
 
-#bde {
-    position: absolute;
-    margin-right: auto;
-}
-
-#bde-idmc-courses {
+#areas {
     position: relative;
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-#bde-title {
-    font-weight: bold;
+#nlp {
+    transition: 0.2s;
 }
 
-#bde-separator {
-    width: 253px;
-    height: 2px;
-    border-radius: 50px;
-    background-color: #7EE787; 
-}
-
-.bde-element:hover {
+.areas-element:hover, .areas-element:hover #nlp {
     color: #7EE787;
 }
 
@@ -431,18 +483,31 @@ header {
     color: #A5D6FF;
 }
 
-#miage-separator {
-    width: 98px;
-    height: 2px;
-    border-radius: 50px;
-    background-color: #A5D6FF; 
+#cybersecurity-ai {
+    margin-left: auto;
 }
 
-#miage-title {
+#cybersecurity-ai-title {
     font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
 }
 
-#miage {
+#cybersecurity-ai-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #A5D6FF;
+}
+
+.cybersecurity-ai-element:hover {
+    color: #A5D6FF;
+}
+
+#cybersecurity-ai {
     width: 400px;
 }
 
@@ -453,7 +518,7 @@ header {
     border: 1px solid #3e424a;
     box-shadow: 0 0 15px black;
     position: relative;
-    font-size: 2.5rem;
+    color: #fcfcfc;
 }
 
 #info-img {
@@ -518,13 +583,13 @@ footer {
 
 
 @media (max-width: 1350px) {
-    #bi-leader {
+    #cybersecurity-leader {
         width: 50%;
     }
 }
 
 @media (max-width: 1300px) {
-    #bde {
+    #areas {
         width: 300px;
     }
 }
@@ -566,35 +631,21 @@ footer {
         font-size: 1.3rem;
         width: 300px;
     }
-    #bi-leader {
+    .projects-box-element {
+        width: 600px;
+        min-width: 230px;
+    }
+    #cybersecurity-leader {
         font-size: 1.3rem;
-    }
-    #bi-areas-separator {
-        width: 86px;
-    }
-    #github-projects-separator {
-        width: 213px;
-    }
-    #bde-separator {
-        width: 220px;
-    }
-    #idmc-courses-separator {
-        width: 375px; 
-    }
-    #miage-separator {
-        width: 90px;
-    }    
-    #bde {
+    } 
+    #areas {
         width: 250px;
     }
-    #idmc-courses {
+    #ai-courses {
         width: 400px;
     }
     #github-inspiration {
         font-size: 1.3rem;
-    }
-    #internship-description {
-        font-size: 2rem;
     }
     #copyright {
         font-size: 1.3rem;
@@ -602,14 +653,10 @@ footer {
 }
 
 @media (max-width: 980px) {   
-    #bde-idmc-courses {
-        flex-direction: column;
-        gap: 20px;
-    }
-    #bde {
+    #areas {
         position: inherit;
     }
-    #idmc-courses {
+    #ai-courses {
         position: inherit;
     }
     #copyright {
@@ -617,14 +664,14 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    #bi-areas-leader {
+    #cybersecurity-areas-leader {
         flex-direction: column;
         gap: 60px;
     }
-    #bi-areas {
+    #cybersecurity-areas {
         margin-left: auto;
     }
-    #bi-leader {
+    #cybersecurity-leader {
         margin-right: auto;
         width: 100%;
     }
@@ -692,44 +739,23 @@ footer {
         font-size: 1.1rem;
         width: 300px;
     }
-    #bi-leader {
+    #cybersecurity-leader {
         font-size: 1.1rem;
     }
-    #bi-areas-separator {
-        width: 100%;
-    }
-    #github-projects-separator {
-        width: 100%;
-    }
-    #bde-separator {
-        width: 100%;
-    }
-    #idmc-courses-separator {
-        width: 100%; 
-    }    
-    #bde {
+    #areas {
         width: 250px;
     }
-    #idmc-courses {
+    #ai-courses {
         width: 80%;
     }
-    #github-projects {
+    #cybersecurity-areas {
         width: 80%;
     }
-    #bi-areas {
-        width: 80%;
-    }
-    #miage-separator {
-        width: 100%;
-    }
-    #miage {
+    #cybersecurity-ai {
         width: 80%;
     }
     #github-inspiration {
         font-size: 1.1rem;
-    }
-    #internship-description {
-        font-size: 1.7rem;
     }
     #copyright {
         font-size: 1.1rem;
@@ -780,44 +806,23 @@ footer {
         font-size: 1.1rem;
         width: 300px;
     }
-    #bi-leader {
+    #cybersecurity-leader {
         font-size: 1rem;
     }
-    #bi-areas-separator {
-        width: 100%;
-    }
-    #github-projects-separator {
-        width: 100%;
-    }
-    #bde-separator {
-        width: 100%;
-    }
-    #idmc-courses-separator {
-        width: 100%; 
-    }    
-    #bde {
+    #areas {
         width: 250px;
     }
-    #idmc-courses {
+    #ai-courses {
         width: 80%;
     }
-    #github-projects {
+    #cybersecurity-areas {
         width: 80%;
     }
-    #bi-areas {
-        width: 80%;
-    }
-    #miage-separator {
-        width: 100%;
-    }
-    #miage {
+    #cybersecurity-ai {
         width: 80%;
     }
     #github-inspiration {
         font-size: 1rem;
-    }
-    #internship-description {
-        font-size: 1.5rem;
     }
     #copyright {
         font-size: 1rem;
@@ -829,10 +834,7 @@ footer {
 }
 
 @media (max-width: 400px) {
-    #bde {
+    #areas {
         width: 80%;
     }
 }
-
-
-/*background*/

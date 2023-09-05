@@ -9,7 +9,7 @@ const currentStatusResult = "Second-year MIASHS-MIAGE student at IDMC in Nancy, 
 const currentStatusResultElement = document.getElementById("current-status-result");
 const goal = "Professional goal";
 const goalElement = document.getElementById("goal");
-const goalResult = "Business Intelligence";
+const goalResult = "IT Security Engineer";
 const goalResultElement = document.getElementById("goal-result");
 
 const prompt2 = document.getElementById("prompt-2");
@@ -101,36 +101,30 @@ const cursor = document.querySelector("#cursor");
 const sidebar = document.querySelector("#sidebar");
 
 window.addEventListener("scroll", () => {
-  const scrollTop = window.scrollY;
-  const viewportHeight = window.innerHeight;
-  const contentHeight = document.body.scrollHeight;
-  const sidebarHeight = sidebar.clientHeight;
-  const maxCursorTop = sidebarHeight - cursor.clientHeight;
+    const scrollTop = window.scrollY;
+    const viewportHeight = window.innerHeight;
+    const contentHeight = document.body.scrollHeight;
+    const sidebarHeight = sidebar.clientHeight;
+    const maxCursorTop = sidebarHeight - cursor.clientHeight;
 
-  const cursorTop = (scrollTop / (contentHeight - viewportHeight)) * maxCursorTop;
+    const cursorTop = (scrollTop / (contentHeight - viewportHeight)) * maxCursorTop;
 
-  cursor.style.top = `${cursorTop}px`;
+    cursor.style.top = `${cursorTop}px`;
 });
 
 
 const nlp = document.getElementById("nlp");
-const informationSystem = document.getElementById("information-system");
-const dataScientistCertif = document.getElementById("data-scientist-certif");
 
 function changeContentNLP(element, newText, oldText) {
-  if (window.innerWidth < 510) { 
-    element.textContent = newText;
-  } else {
-    element.textContent = oldText;
-  }
+    if (window.innerWidth < 1300) { 
+        element.textContent = newText;
+    } else {
+        element.textContent = oldText;
+    }
 }
 
-changeContentNLP(nlp, "NLP", "Natural Language Processing (NLP)");
-changeContentNLP(informationSystem, "IS Management", "Information Systems Management");
-changeContentNLP(dataScientistCertif, "Data Scientist", "Data Scientist Certification");
+changeContentNLP(nlp, "NLP", "Natural Language Processing");
 
 window.addEventListener('resize', () => {
-    changeContentNLP(nlp, "NLP", "Natural Language Processing (NLP)");
-    changeContentNLP(informationSystem, "IS Management", "Information Systems Management");    
-    changeContentNLP(dataScientistCertif, "Data Scientist", "Data Scientist Certification");
+    changeContentNLP(nlp, "NLP", "Natural Language Processing");
 });
