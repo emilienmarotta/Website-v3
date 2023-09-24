@@ -373,9 +373,10 @@ header {
 
 #projects-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
     width: 80%;
+    flex-wrap: wrap;
 }
 
 .projects-box-element {
@@ -387,6 +388,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: space-between;
     box-shadow: 0 0 15px black;
     border: 1px solid #3e424a;
     position: relative;
