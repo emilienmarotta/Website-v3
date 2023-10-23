@@ -97,20 +97,20 @@ function instagramMouseOut() {
 }
 
 
-const cursor = document.querySelector("#cursor");
-const sidebar = document.querySelector("#sidebar");
+// const cursor = document.querySelector("#cursor");
+// const sidebar = document.querySelector("#sidebar");
 
-window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
-    const viewportHeight = window.innerHeight;
-    const contentHeight = document.body.scrollHeight;
-    const sidebarHeight = sidebar.clientHeight;
-    const maxCursorTop = sidebarHeight - cursor.clientHeight;
+// window.addEventListener("scroll", () => {
+//     const scrollTop = window.scrollY;
+//     const viewportHeight = window.innerHeight;
+//     const contentHeight = document.body.scrollHeight;
+//     const sidebarHeight = sidebar.clientHeight;
+//     const maxCursorTop = sidebarHeight - cursor.clientHeight;
 
-    const cursorTop = (scrollTop / (contentHeight - viewportHeight)) * maxCursorTop;
+//     const cursorTop = (scrollTop / (contentHeight - viewportHeight)) * maxCursorTop;
 
-    cursor.style.top = `${cursorTop}px`;
-});
+//     cursor.style.top = `${cursorTop}px`;
+// });
 
 
 const nlp = document.getElementById("nlp");
@@ -128,3 +128,11 @@ changeContentNLP(nlp, "NLP", "Natural Language Processing");
 window.addEventListener('resize', () => {
     changeContentNLP(nlp, "NLP", "Natural Language Processing");
 });
+
+function testProjectMouseOver() {
+    document.getElementById("test-project-img").src = "Index/external2.png";
+}
+
+function testProjectMouseOut() {
+    document.getElementById("test-project-img").src = "Index/external.png";
+}

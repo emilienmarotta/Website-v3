@@ -434,12 +434,24 @@ header {
 }
 
 .projects-box-element-consult {
+    width: 250px;
     margin-top: 20px;
     transition: 0.2s;
 }
 
 .projects-box-element-consult:hover {
     color: #939AFF;
+}
+
+#test-project {
+    width: 30px;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+#test-project img {
+    width: 30px;
 }
 
 .magenta-word {
@@ -775,7 +787,7 @@ footer {
     }
 
     header {
-        margin-top: 30px;
+        margin-top: 40px;
         height: 600px;
     }
 
