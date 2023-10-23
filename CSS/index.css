@@ -770,6 +770,18 @@ footer {
 }
 
 @media (max-width: 440px) {
+    body {
+        gap: 200px;
+    }
+
+    header {
+        height: 600px;
+    }
+
+    #presentation-box {
+        height: 600px;
+    }
+
     #presentation-box h1 {
         font-size: 2.3rem;
     }
@@ -789,7 +801,7 @@ footer {
         font-size: 1.2rem;
         height: 40px;
         width: 200px;
-        background-color: #00000085;
+        background-color: #000000aa;
     }
     .box-description {
         font-size: 1.8rem;
