@@ -80,6 +80,14 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 
+function mailMouseOver() {
+    document.getElementById("mail").src = "Index/mail-2.png";
+}
+
+function mailMouseOut() {
+    document.getElementById("mail").src = "Index/mail.png";
+}
+
 function linkedinMouseOver() {
     document.getElementById("linkedin").src = "Index/linkedin-2.png";
 }
